@@ -101,6 +101,31 @@
             color: #8b949e;
         }
 
+        .folder-tag {
+            display: inline-block;
+            background-color: rgba(88, 166, 255, 0.15);
+            color: var(--accent-color);
+            font-size: 0.8rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .video-section {
+            background-color: var(--card-bg);
+            border: 1px solid var(--primary-color);
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .video-section h2 {
+            color: var(--heading-color);
+            margin-bottom: 10px;
+        }
+
         .links-section {
             text-align: center;
             margin-top: 40px;
@@ -135,6 +160,15 @@
             background-color: rgba(88, 166, 255, 0.1);
         }
 
+        .btn-red {
+            background-color: #da3633;
+            color: white;
+        }
+
+        .btn-red:hover {
+            background-color: #b62320;
+        }
+
         footer {
             text-align: center;
             margin-top: 40px;
@@ -157,6 +191,37 @@
         </p>
     </section>
 
+    <!-- Seção da Estrutura do Repositório -->
+    <h2 class="section-title">Estrutura do Repositório no GitHub</h2>
+    <div class="grid-container">
+        <div class="card">
+            <span class="folder-tag">Pasta 01</span>
+            <h3>Apresentação e Perfil</h3>
+            <p>Documentação com bio profissional, competências e links de integração acadêmica e profissional.</p>
+        </div>
+        <div class="card">
+            <span class="folder-tag">Pasta 02</span>
+            <h3>Disciplinas Atuais</h3>
+            <p>Ementas e acompanhamento detalhado das 6 matérias do 1º semestre de ADS no CEUB.</p>
+        </div>
+        <div class="card">
+            <span class="folder-tag">Pasta 03</span>
+            <h3>Projetos e Certificados</h3>
+            <p>Centralização dos projetos práticos, aplicações desenvolvidas e certificações na área de tecnologia.</p>
+        </div>
+        <div class="card">
+            <span class="folder-tag">Pasta 04</span>
+            <h3>Exercícios e Laboratórios</h3>
+            <p>Armazenamento de scripts, algoritmos, consultas SQL e desafios práticos de sala de aula.</p>
+        </div>
+        <div class="card">
+            <span class="folder-tag">Pasta 05</span>
+            <h3>Documentação e Estudos</h3>
+            <p>Resumos teóricos, diagramas de Engenharia de Software (UML/E-R) e materiais de estudo.</p>
+        </div>
+    </div>
+
+    <!-- Seção das Disciplinas -->
     <h2 class="section-title">Disciplinas do 1º Semestre</h2>
     <div class="grid-container">
         <div class="card">
@@ -185,6 +250,15 @@
         </div>
     </div>
 
+    <!-- Seção do Vídeo de Apresentação -->
+    <section class="video-section">
+        <h2>Apresentação do Repositório (Vídeo)</h2>
+        <p>Assista ao vídeo explicativo de 5 minutos sobre a estrutura de versionamento e integração do projeto.</p>
+        <br>
+        <!-- Quando tiver o link do YouTube gravado, substitua o SEU_LINK_AQUI pelo link real -->
+        <a href="SEU_LINK_DO_YOUTUBE_AQUI" target="_blank" class="btn btn-red">Assistir no YouTube</a>
+    </section>
+
     <div class="links-section">
         <h2>Conecte-se Comigo</h2>
         <br>
@@ -198,4 +272,3 @@
 
 </body>
 </html>
-
