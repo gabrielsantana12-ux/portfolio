@@ -1,2 +1,201 @@
-<h1>Meu Portfólio - Projetos de ADS</h1>
-<p>Olá! Este é o meu repositório com meus projetos acadêmicos e pessoais.</p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Santana | Portfólio ADS</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --primary-color: #238636;
+            --accent-color: #58a6ff;
+            --text-color: #c9d1d9;
+            --heading-color: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: var(--heading-color);
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+        }
+
+        .bio-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .bio-card h2 {
+            color: var(--heading-color);
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .section-title {
+            color: var(--heading-color);
+            margin: 30px 0 15px 0;
+            font-size: 1.5rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-color);
+        }
+
+        .card h3 {
+            color: var(--heading-color);
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #8b949e;
+        }
+
+        .links-section {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #2ea043;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--accent-color);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--accent-color);
+            background-color: rgba(88, 166, 255, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: #8b949e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gabriel Santana Ferreira</h1>
+        <p>Estudante de Análise e Desenvolvimento de Sistemas | CEUB Taguatinga</p>
+    </header>
+
+    <section class="bio-card">
+        <h2>Sobre Mim</h2>
+        <p>
+            Com bagagem prática em produção audiovisual, edição de mídias e design gráfico, busco integrar a visão criativa de resolução de problemas ao desenvolvimento de software, automação e inteligência artificial. Este portfólio centraliza meus aprendizados, projetos e a evolução das minhas competências em TI.
+        </p>
+    </section>
+
+    <h2 class="section-title">Disciplinas do 1º Semestre</h2>
+    <div class="grid-container">
+        <div class="card">
+            <h3>Bootcamp I</h3>
+            <p>Planejamento da arquitetura do Study Hub, versionamento em Git/GitHub e desenvolvimento da identidade profissional em TI.</p>
+        </div>
+        <div class="card">
+            <h3>Introdução à Computação</h3>
+            <p>Conceitos fundamentais de arquitetura de computadores, hardware, software e funcionamento de sistemas operacionais.</p>
+        </div>
+        <div class="card">
+            <h3>Matemática para Computação</h3>
+            <p>Fundamentos de lógica matemática, álgebra booleana, teoria dos conjuntos e raciocínio formal para algoritmos.</p>
+        </div>
+        <div class="card">
+            <h3>Lógica de Programação e Algoritmos</h3>
+            <p>Desenvolvimento de raciocínio lógico, estruturas condicionais, laços de repetição e resolução de problemas por código.</p>
+        </div>
+        <div class="card">
+            <h3>Engenharia de Software</h3>
+            <p>Modelagem de sistemas, diagramas de casos de uso, levantamento de requisitos e metodologias de ciclo de vida de software.</p>
+        </div>
+        <div class="card">
+            <h3>Banco de Dados I (Relacional)</h3>
+            <p>Modelagem Entidade-Relacionamento (E-R), criação de schemas, scripts SQL e consultas a dados estruturados.</p>
+        </div>
+    </div>
+
+    <div class="links-section">
+        <h2>Conecte-se Comigo</h2>
+        <br>
+        <a href="https://github.com/gabrielsantana12-ux/portfolio" target="_blank" class="btn">Acessar Repositório no GitHub</a>
+        <a href="https://www.linkedin.com/in/gabriel-santana-ferreira-128614366/" target="_blank" class="btn btn-outline">Perfil do LinkedIn</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Gabriel Santana Ferreira - Portfólio Acadêmico de ADS</p>
+    </footer>
+
+</body>
+</html>
+
