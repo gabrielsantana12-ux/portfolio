@@ -185,6 +185,26 @@
             margin-bottom: 20px;
         }
 
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
         .links-section {
             text-align: center;
             margin-top: 50px;
@@ -326,7 +346,12 @@
     <section class="video-section">
         <h2>Apresentação do Repositório (Vídeo)</h2>
         <p>Assista ao vídeo explicativo sobre a estrutura de versionamento e integração do projeto.</p>
-        <a href="https://www.youtube.com" target="_blank" class="btn btn-red">Assistir no YouTube</a>
+        
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/ZhCBkrfiUdE" title="Apresentação Portfólio Profissional - Gabriel Santana" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <a href="https://youtu.be/ZhCBkrfiUdE?si=Fgkxa08hISwT4SJX" target="_blank" class="btn btn-red">Assistir direto no YouTube</a>
     </section>
 
     <div class="links-section">
